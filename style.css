@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: none; */
+    font-family: "Roboto Slab";
+    color: white; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* header */
+
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+header ul {
+    width: 50%;
+    margin-left: 25%;
+    height: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: distribute;
+    align-items: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+    list-style-type: none;
+    font-size: 15px;
+}
+
+header ul li{
+    color: white;
+}
+
+header ul li:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 4px;
+    background-color: #c78030;
+}
+
+header ul li:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 4px;
+    background-color: #c78030;
+}
+
+
+/* first screen */
+
+.first-screen {
+    width: 100%;
+    height: 650px;
+    background: url(./img/bg.jpg) center;
+    background-size: cover;
+}
+
+.first-block {
+    width: 750px;
+    min-height: 300px;
+    border: 6px solid #c78030;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    /* margin-top: 180px; */
+}
+
+.first-block-link {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.first-block-link:after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 2px;
+}
+
+.first-block-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 52px;
+    margin-top: 35px;
+}
+
+.first-block-descript {
+    color: #c78030;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 35px;
+}
+
+
+
+/* second screen */
+
+.second-screen {
+    width: 100%;
+    min-height: 3200px;
+    background: url(./img/main_bg.jpg);
+    background-position: 50% 30%;
+}
+
+.second-block {
+    width: 60%;
+    min-height: 580px;
+    background-color: #373737;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+    padding: 50px;
+    margin-left: 20%;
+}
+
+.second-block .header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.second-block-names {
+    color: #c78030;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.second-block-names:after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #c78030;
+    margin-top: 4px;
+    -webkit-transition: 0.4s;
+            transition: 0.4s;
+}
+
+.second-block-names:hover:after {
+    width: 60%;
+}
+
+
+
+/* programm */
+
+.program {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.program-title {
+    font-size: 34px;
+    color: #c78030;
+}
+
+.program-title:after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 3px;
+    background-color: #c78030;
+    margin-top: 4px;
+    -webkit-transition: 0.4s;
+            transition: 0.4s;
+}
+
+.program-desc {
+    width: 50%;
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+.more-button {
+    width: 180px;
+    height: 45px;
+    line-height: 43px;
+    border: 1px solid #c78030;
+    color: #c78030;
+    margin-top: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.text-button {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.more-button:hover {
+    box-shadow: 0px 0px 5px #c78030;
+}
+
+.program-desc,
+.program img {
+    width: 50%;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+}
+
+.photo img {
+    width: 100%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+}
