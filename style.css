@@ -47,7 +47,7 @@ header ul {
         -webkit-align-items: center;
         -ms-flex-align: center;
     list-style-type: none;
-    font-size: 15px;
+    font-size: calc(10px + 3 * (100vw / 1280));
 }
 
 header ul li{
@@ -85,8 +85,10 @@ header ul li:before {
 }
 
 .first-block {
-    width: 750px;
-    min-height: 300px;
+    min-width: 400px;
+    width: 40%;
+    min-height: 200px;
+    height: 45%;
     border: 6px solid #c78030;
     background-color: rgba(0, 0, 0, 0.4);
     margin: 0 auto;
@@ -97,14 +99,14 @@ header ul li:before {
 
 .first-block-link {
     color: #fff;
-    font-size: 22px;
+    font-size: calc(11px + 8 * (100vw / 1280));
     font-weight: bold;
 }
 
 .first-block-link:after {
     content: '';
     display: block;
-    width: 30%;
+    width: 10%;
     height: 3px;
     background-color: white;
     margin: 0 auto;
@@ -114,7 +116,7 @@ header ul li:before {
 .first-block-title {
     color: #fff;
     text-transform: uppercase;
-    font-size: 52px;
+    font-size: calc(26px + 8 * (100vw / 1280));
     margin-top: 35px;
 }
 
@@ -122,7 +124,7 @@ header ul li:before {
     color: #c78030;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 22px;
+    font-size: calc(11px + 8 * (100vw / 1280));
     margin-top: 35px;
 }
 
@@ -139,11 +141,12 @@ header ul li:before {
 
 .second-block {
     width: 60%;
+    min-width: 300px;
     min-height: 580px;
     background-color: #373737;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
     padding: 50px;
-    margin-left: 20%;
+    margin: 0 auto;
 }
 
 .second-block .header {
@@ -156,7 +159,7 @@ header ul li:before {
 .second-block-names {
     color: #c78030;
     font-weight: bold;
-    font-size: 24px;
+    font-size: calc(10px + 10 * (100vw / 1280));
     cursor: pointer;
 }
 
@@ -181,17 +184,13 @@ header ul li:before {
 
 .program {
     width: 100%;
-    padding-top: 50px;
+    padding-top: 10%;
     display: flex;
 }
 
 .program-info,
 .program .photo 
 {
-    width: 50%;
-}
-
-.program-info {
     width: 50%;
 }
 
@@ -206,7 +205,7 @@ header ul li:before {
 }
 
 .program-title {
-    font-size: 34px;
+    font-size: calc(17px + 8 * (100vw / 1280));
     color: #c78030;
 }
 
@@ -222,9 +221,9 @@ header ul li:before {
 }
 
 .program-desc {
-    /* width: 100%; */
     margin-top: 30px;
     font-weight: 300;
+    font-size: calc(8px + 8 * (100vw / 1280));
 }
 
 .more-button {
@@ -258,19 +257,19 @@ header ul li:before {
 }
 
 .timer-title {
-    font-size: 36px;
+    font-size: calc(18px + 12 * (100vw / 1280));
     color: #c78030;
 }
 
 .timer-desc {
-    font-size: 24px;
+    font-size: calc(16px + 8 * (100vw / 1280));
     color: #fff;
     margin-top: 40px;
 }
 
 .timer-numbers {
     margin-top: 40px;
-    font-size: 90px;
+    font-size: calc(45px + 30 * (100vw / 1280));
 }
 
 .timer-numbers span {
@@ -290,7 +289,8 @@ header ul li:before {
 .timer .more-button {
     margin-top: 70px;
     width: 15%;
-    height: 70px;
+    min-width: 150px;
+    height: 100%;
     align-items: center;
     background-color: transparent;
 }
@@ -306,6 +306,7 @@ header ul li:before {
 .photos {
     /* margin-top: 150px; */
     width: 50%;
+    min-width: 300px;
     margin: 150px auto;
 }
 
@@ -317,6 +318,7 @@ header ul li:before {
 }
 
 .photo-title {
+    margin-left: -10%;
     font-size: 32px;
     color: #c78030;
 }
@@ -324,7 +326,7 @@ header ul li:before {
 .photo-title:after {
     content: '';
     display: block;
-    width: 10%;
+    width: 9%;
     height: 1px;
     background-color: #c78030;
     margin-top: 4px;
@@ -363,7 +365,7 @@ header ul li:before {
     position: absolute;
     cursor: pointer;
     top: 50px;
-    width: 90px;
+    width: 10%;
     height: 98%;
     left: 0%;
     background-color: rgba(0, 0, 0, 0);
@@ -396,7 +398,7 @@ header ul li:before {
     position: absolute;
     cursor: pointer;
     top: 50px;
-    width: 90px;
+    width: 10%;
     right: 0%;
     background-color: rgba(0, 0, 0, 0);
     -webkit-transition: 0.3s;
@@ -436,7 +438,7 @@ header ul li:before {
 }
 
 .counter-title {
-    font-size: 32px;
+    font-size: calc(18px + 12 * (100vw / 1280));
     color: #c78030;
 }
 
@@ -458,7 +460,8 @@ header ul li:before {
 }
 
 .counter-block-option {
-    font-size: 22px;
+    min-width: 100px;
+    font-size: calc(12px + 8 * (100vw / 1280));
     color: #c78030;
 }
 
@@ -471,7 +474,7 @@ header ul li:before {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid rgba(199, 126, 48, 0.6);
-    font-size: 46px;
+    font-size: calc(18px + 8 * (100vw / 1280));
     text-align: center;
 }
 
@@ -487,12 +490,12 @@ header ul li:before {
     margin-top: 30px;
     padding-right: 50px;
     text-align: right;
-    font-size: 38px;
+    font-size: calc(20px + 8 * (100vw / 1280));
     color: #c78030;
 }
 
 .counter-total span {
-    font-size: 46px;
+    font-size: calc(24px + 8 * (100vw / 1280));
     color: #c78030;
 }
 
@@ -512,6 +515,7 @@ header ul li:before {
 
 .form-block {
     width: 50%;
+    min-width: 300px;
     height: 400px;
     margin: 0 auto;
     margin-top: 150px;
@@ -521,14 +525,17 @@ header ul li:before {
 }
 
 .form-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
 }
 
 .form-img img {
-    height: 100%;
+    width: 100%;
 }
 
-.conract-form {
+.contact-form {
     width: 50%;
     padding-left: 40px;
 }
@@ -551,7 +558,7 @@ header ul li:before {
 
 form input {
     display: block;
-    width: 100%;
+    width: 70%;
     height: 40px;
     margin-top: 30px;
     background-color: transparent;
@@ -572,6 +579,7 @@ form button {
 
 form .more-button {
     margin-top: 60px;
+    width: 40%;
 }
 
 
@@ -590,7 +598,8 @@ form .more-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .social-block {
