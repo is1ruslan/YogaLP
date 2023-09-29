@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
     <link rel="icon" type="image/svg" href="./logo/pinterest-logo.svg">
     <title>Yoga</title>
 </head>
@@ -34,7 +35,7 @@
     <div class="second-screen">
         <div class="about" id="about">
             <div class="second-block">
-                <div class="header">
+                <div class="header-names">
                     <div class="second-block-names">Treatment</div>
                     <div class="second-block-names">Rest</div>
                     <div class="second-block-names">Nature</div>
@@ -232,5 +233,32 @@
             </div>
         </footer>
     </div>
+
+
+
+    <!-- overlay -->
+
+    <div class="overlay">
+        <div class="popup">
+           <div class="popup-close">&times;
+           </div>
+           <div class="popup-title">
+           Форма обратной связи</div>
+               <div class="popup-form">	
+                   <form action="#" class="main-form">
+                       <div class="popup-form-header">
+                           Узнайте больше о своём отдыхе
+                       </div>
+                           <label class="popup-form__label" for="phone">
+                           Введите ваш номер телефона:
+                           </label>
+                           <input class="popup-form__input" name="phone" type="tel" required placeholder="+7(978) 973 33 45">
+                           <button class="button popup-form__btn">
+                               Оставить заявку!
+                           </button>
+                   </form>
+               </div>
+        </div>
+</div>
 </body>
 </html>
