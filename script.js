@@ -102,6 +102,32 @@ window.addEventListener('DOMContentLoaded', function () {
 
     //calculator
 
+    let peoples = document.getElementsByTagName('input')[0],
+        vacantionDays = document.getElementsByTagName('input')[1],
+        total = document.querySelector('#total'),
+        place = document.getElementById('select'),
+        count = 0;
+
+    function countTotal () {
+        if (peoples.value && vacantionDays.value) {
+            count = (Number(peoples.value) * 2000 + Number(vacantionDays.value) * 5000);
+            total.textContent = count;
+        }
+    }
+
+    peoples.addEventListener('input', function () {
+        countTotal();
+    });
+
+    vacantionDays.addEventListener('input', function () {
+        countTotal();
+    });
     
-    
+
+    place.addEventListener('change', function () {
+        if (peoples.value && vacantionDays.value) {
+            count = (Number(peoples.value) * 2000 + Number(vacantionDays.value) * 5000) * this.value;
+            total.textContent = count;
+        }
+    });
 });
