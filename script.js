@@ -38,11 +38,34 @@ window.addEventListener('DOMContentLoaded', function () {
 
     //timer
 
-    let deadline = '2024-03-19',
+    let deadline = '2023-10-01',
+        deadLineDate = Date.parse(deadline),
         hours = document.querySelector('.hours'),
         minutes = document.querySelector('.minutes'),
         seconds = document.querySelector('.seconds');
 
+        function updateClock () {
+            let now = Date.now();
+
+            if (deadLineDate - now > 0) {
+                hours.textContent = addZero(Math.floor(((deadLineDate - now)/1000/60/60) % 24));
+                minutes.textContent = addZero(Math.floor(((deadLineDate - now)/1000/60) % 60));
+                seconds.textContent = addZero(Math.floor(((deadLineDate - now)/1000) % 60));
+            } else {
+                hours.textContent = '00';
+                minutes.textContent = '00';
+                seconds.textContent = '00';
+            }
+        };
+
+        function addZero (time) {
+            if (time <= 9) {
+                return '0' + time;
+            } else 
+            return time;
+        }
+
+        setInterval(updateClock, 1000);
     
 
     //slider 
