@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     //timer
 
-    let deadline = '2023-10-01',
+    let deadline = '2024-01-01',
         deadLineDate = Date.parse(deadline),
         hours = document.querySelector('.hours'),
         minutes = document.querySelector('.minutes'),
@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', function () {
             let now = Date.now();
 
             if (deadLineDate - now > 0) {
-                hours.textContent = addZero(Math.floor(((deadLineDate - now)/1000/60/60) % 24));
+                hours.textContent = addZero(Math.floor(((deadLineDate - now)/1000/60/60)));
                 minutes.textContent = addZero(Math.floor(((deadLineDate - now)/1000/60) % 60));
                 seconds.textContent = addZero(Math.floor(((deadLineDate - now)/1000) % 60));
             } else {
@@ -158,8 +158,25 @@ window.addEventListener('DOMContentLoaded', function () {
 
     //form
 
-    
+    let form = document.getElementById('form');
 
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        let formData = new FormData(this);
+
+        fetch('server.php', {
+            method: 'POST',
+            body: formData
+        })
+        //.then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Error:', error)
+        });
+    });
 
 
     //modal window

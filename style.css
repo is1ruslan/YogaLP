@@ -546,9 +546,6 @@ header ul li:before {
     appearance: none;
     margin: 0;
 }
-.counter input[type=number] {
-    -moz-appearance: textfield;
-}
 
 
 /* form */
