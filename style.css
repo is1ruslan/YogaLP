@@ -614,9 +614,13 @@ form button {
     cursor: pointer;
 }
 
-form .more-button {
+form .form-button {
     margin-top: 60px;
     width: 40%;
+}
+
+form .form-button:hover {
+    box-shadow: 0px 0px 5px #c78030;
 }
 
 
@@ -732,7 +736,7 @@ form .more-button {
 
   .overlay .popup-form__label {
     display: block;
-    margin-top: 23px;
+    margin-top: 5%;
     font-size: calc(10px + 8 * (100vw / 1280));
     font-weight: 300;
     text-align: center;
@@ -786,6 +790,7 @@ form .more-button {
     height: calc(28px + 20 * (100vw / 1280));;
     font-size: calc(6px + 8 * (100vw / 1280));
     line-height: 22px;
+    margin-top: 5%;
     background-color: transparent;
     color: #c78030;
     border: 1px solid #c78030;

@@ -158,10 +158,11 @@ window.addEventListener('DOMContentLoaded', function () {
 
     //form
 
-    let form = document.getElementById('form');
+    let form = document.querySelector('#form');
 
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
+    document.addEventListener('submit', function (event) {
+        if (event.target.classList.contains('form-button')) {
+            event.preventDefault();
 
         let formData = new FormData(this);
 
@@ -174,8 +175,9 @@ window.addEventListener('DOMContentLoaded', function () {
             console.log(data);
         })
         .catch(error => {
-            console.error('Error:', error)
+            console.error('Error:', error);
         });
+        };
     });
 
 
@@ -185,15 +187,17 @@ window.addEventListener('DOMContentLoaded', function () {
         overlay = document.querySelector('.overlay'),
         close = document.querySelector('.popup-close');
 
-        more.addEventListener('click', function () {
-            overlay.style.display = 'block';
-            this.classList.add('more-splash');
-            document.body.style.overflow = 'hidden';
+        document.addEventListener('click', function (event) {
+            if (event.target.classList.contains('more-button')) {
+                overlay.classList.add('more-splash');
+                overlay.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
         });
 
         close.addEventListener('click', function () {
-            overlay.style.display = 'none';
             more.classList.remove('more-splash');
+            overlay.style.display = 'none';
             document.body.style.overflow = '';
-        })
+        })     
 });
