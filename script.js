@@ -158,8 +158,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
     //form
 
-    let form = document.querySelector('#form');
-
     document.addEventListener('submit', function (event) {
         if (event.target.classList.contains('form-button')) {
             event.preventDefault();
