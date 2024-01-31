@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     //timer
 
-    let deadline = '2024-01-01',
+    let deadline = '2025-01-01',
         deadLineDate = Date.parse(deadline),
         hours = document.querySelector('.hours'),
         minutes = document.querySelector('.minutes'),
@@ -187,7 +187,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
         document.addEventListener('click', function (event) {
             if (event.target.classList.contains('more-button')) {
-                overlay.classList.add('more-splash');
+                more.classList.add('more-splash');
                 overlay.style.display = 'block';
                 document.body.style.overflow = 'hidden';
             }
