@@ -2,7 +2,7 @@
 # India Tours Lending Page
 <h2>About the project</h2>
 
-<p>Website is a single-page site that encapsulates the serenity and spirituality of Indian yoga tours with a variety of user-friendly features and smooth, aesthetically pleasing animations. Here's a brief overview of the technical functionalities integrated into the website:<br>
+<p>Website is a single-page site <b>with a responsive design</b> that encapsulates the serenity and spirituality of Indian yoga tours with a variety of user-friendly features and smooth, aesthetically pleasing animations. Here's a brief overview of the technical functionalities integrated into the website:<br>
 <br>
 <h3>Navigation Bar (Navbar):</h3>
 • Provides easy access to all sections of the site, such as About us, Photos, Price, and Contacts.<br>
